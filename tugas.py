@@ -74,3 +74,30 @@ match operasi:
          print(f"Hasilnya adalah = {pembagian}")
      case _:
          print("Pilihan operasi tidak ditemukan")
+
+# ===== yang diatas dongo
+
+print("===== KALKULATOR =====")
+print("1. Penjumlahan")
+print("2. Pengurangan")
+print("3. Perkalian")
+print("4. Pembagian")
+
+operasi = input("Pilih operasi : ")
+
+match operasi:
+    case "1" | "2" | "3" | "4":
+        b1 = int(input("Masukkan bilangan 1 : "))
+        b2 = int(input("Masukkan bilangan 2 : "))
+
+        match operasi:
+            case "1":
+                print(f"Hasilnya adalah = {b1 + b2}")
+            case "2":
+                print(f"Hasilnya adalah = {b1 - b2}")
+            case "3":
+                print(f"Hasilnya adalah = {b1 * b2}")
+            case "4":
+                print(f"Hasilnya adalah = {b1 / b2}")
+    case _:
+        print("Pilihan operasi tidak valid!")
