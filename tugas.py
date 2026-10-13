@@ -46,3 +46,31 @@ match pilihan:
     case _:
         print("Jurusan tidak tersedia")
         
+# ===== TUGAS 2 =====
+
+print("===== KALKULATOR =====")
+print("1. Penjumlahan")
+print("2. Pengurangan")
+print("3. Perkalian")
+print("4. Pembagian")
+
+operasi = input("Pilih operasi : ")
+b1 = int(input("Masukkan bilangan 1 : "))
+b2 = int(input("Masukkan bilangan 2 : "))
+
+penjumlahan = b1 + b2
+pengurangan = b1 - b2
+perkalian = b1 * b2
+pembagian = b1 / b2
+
+match operasi:
+     case "1":
+         print(f"Hasilnya adalah = {penjumlahan}")
+     case "2":
+         print(f"Hasilnya adalah = {pengurangan}")
+     case "3":
+         print(f"Hasilnya adalah = {perkalian}")
+     case "4":
+         print(f"Hasilnya adalah = {pembagian}")
+     case _:
+         print("Pilihan operasi tidak ditemukan")
